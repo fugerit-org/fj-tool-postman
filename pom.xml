@@ -1,0 +1,103 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>org.fugerit.java</groupId>
+	<artifactId>fj-tool-postman</artifactId>
+
+	<parent>
+		<groupId>org.fugerit.java.universe</groupId>
+		<artifactId>fj-universe-tool</artifactId>
+		<version>1.0.1</version>
+		<relativePath></relativePath>
+	</parent>
+
+	<version>1.0.0</version>
+	<packaging>jar</packaging>
+
+	<name>Tool for postman</name>
+	<description>Sample collection utilities for postman usage</description>
+	<url>http://www.fugerit.org/</url>
+
+	<scm>
+		<connection>scm:git:git://github.com/fugerit-org/fj-tool-postman.git</connection>
+		<developerConnection>scm:git:ssh://github.com/fugerit-org/fj-tool-postman.git</developerConnection>
+		<url>https://github.com/fugerit-org/fj-tool-postman.git</url>
+		<tag>HEAD</tag>
+	</scm>
+
+	<issueManagement>
+		<system>GitHub</system>
+		<url>https://github.com/fugerit-org/fj-tool-postman/issues</url>
+	</issueManagement>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<java-version-compliance>8</java-version-compliance>
+		<!-- libraries versions -->
+		<snake-yaml-version>2.2</snake-yaml-version>   
+	    <!-- sonar cloud configuration -->
+		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
+		<sonar.organization>fugerit-org</sonar.organization>
+		<sonar.projectKey>fugerit-org_fj-tool-postman</sonar.projectKey>
+		<!-- tool main class -->
+		<tool-main-class>org.fugerit.java.yaml.doc.YamlDocMain</tool-main-class>
+	</properties>
+
+	<licenses>
+		<license>
+			<name>Apache License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<developers>
+		<developer>
+			<name>Matteo a.k.a. Fugerit</name>
+			<email>m@fugerit.org</email>
+			<organization>Fugerit</organization>
+			<organizationUrl>http://www.fugerit.org</organizationUrl>
+		</developer>
+		<developer>
+			<name>Daneel</name>
+			<email>d@fugerit.org</email>
+			<organization>Fugerit</organization>
+			<organizationUrl>http://www.fugerit.org</organizationUrl>
+		</developer>
+	</developers>
+
+	<distributionManagement>
+		<snapshotRepository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+		</snapshotRepository>
+	</distributionManagement>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.fugerit.java</groupId>
+			<artifactId>fj-test-helper8</artifactId>
+			<scope>test</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>*</groupId>
+					<artifactId>*</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+	</dependencies>
+
+	<organization>
+		<url>http://www.fug	erit.org</url>
+		<name>Fugerit</name>
+	</organization>
+		
+</project>
