@@ -29,7 +29,7 @@ java -jar target/dist-fj-tool-postman-*.jar \
 
 | **name**           | **required** | **default** | **description**                       | **since** | **info**                                                                                        |
 |--------------------|--------------|-------------|---------------------------------------|-----------|-------------------------------------------------------------------------------------------------|
-| `fun`              | `true`       | none        | The function to activate.             | 0.1.0     | possible values are : CollectionEnvMerge (Merge a collection and an environment variables file) |
-| `collection-path`  | `true`       | none        | Path of postman collection to merge.  | 0.1.0     | Required only for fun 'CollectionEnvMerge'.                                                     |
-| `environment-path` | `true`       | none        | Path of postman environment to merge. | 0.1.0     | Required only for fun 'CollectionEnvMerge'.                                                     |
-| `output-path`      | `true`       | none        | Path of the merged collection.        | 0.1.0     | Required only for fun 'CollectionEnvMerge'.                                                     |
+| `fun`              | `true`       | none        | The function to activate.             | 1.0.0     | possible values are : CollectionEnvMerge (Merge a collection and an environment variables file) |
+| `collection-path`  | `true`       | none        | Path of postman collection to merge.  | 1.0.0     | Required only for fun 'CollectionEnvMerge'.                                                     |
+| `environment-path` | `true`       | none        | Path of postman environment to merge. | 1.0.0     | Required only for fun 'CollectionEnvMerge'.                                                     |
+| `output-path`      | `true`       | none        | Path of the merged collection.        | 1.0.0     | Required only for fun 'CollectionEnvMerge'.                                                     |

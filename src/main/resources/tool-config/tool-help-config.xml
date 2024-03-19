@@ -17,7 +17,7 @@
 		<required>`true`</required>
 		<defaultValue>none</defaultValue>
 		<description>The function to activate.</description>
-		<since>0.1.0</since>
+		<since>1.0.0</since>
 		<info>possible values are : CollectionEnvMerge (Merge a collection and an environment variables file)</info>
 	</param>
 	
@@ -26,7 +26,7 @@
 		<required>`true`</required>
 		<defaultValue>none</defaultValue>
 		<description>Path of postman collection to merge.</description>
-		<since>0.1.0</since>
+		<since>1.0.0</since>
 		<info>Required only for fun 'CollectionEnvMerge'.</info>
 	</param>
 
@@ -35,7 +35,7 @@
 		<required>`true`</required>
 		<defaultValue>none</defaultValue>
 		<description>Path of postman environment to merge.</description>
-		<since>0.1.0</since>
+		<since>1.0.0</since>
 		<info>Required only for fun 'CollectionEnvMerge'.</info>
 	</param>
 
@@ -44,7 +44,7 @@
 		<required>`true`</required>
 		<defaultValue>none</defaultValue>
 		<description>Path of the merged collection.</description>
-		<since>0.1.0</since>
+		<since>1.0.0</since>
 		<info>Required only for fun 'CollectionEnvMerge'.</info>
 	</param>
 
