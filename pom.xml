@@ -41,7 +41,7 @@
 		<sonar.organization>fugerit-org</sonar.organization>
 		<sonar.projectKey>fugerit-org_fj-tool-postman</sonar.projectKey>
 		<!-- tool main class -->
-		<tool-main-class>org.fugerit.java.yaml.doc.YamlDocMain</tool-main-class>
+		<tool-main-class>org.fugerit.java.tool.postman.PostmanTool</tool-main-class>
 	</properties>
 
 	<licenses>

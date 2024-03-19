@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tool-help-config>
+
+	<toolName>Fugerit tool postman</toolName>
+	
+	<toolDescription>Sample utilities for Postman.</toolDescription>
+	
+	<commandExample>java -jar target/dist-fj-tool-postman-*.jar \
+	 --fun CollectionEnvMerge\
+     --collection-path src/test/resources/sample/fj-doc-playground-quarkus.postman_collection.json\
+     --environment-path src/test/resources/sample/fugerit_ampere04.postman_environment.json\
+	 --output-path target/fj-doc-playground-quarkus-sample.postman_collection.json
+	</commandExample>
+	
+	<param>
+		<id>`fun`</id>
+		<required>`true`</required>
+		<defaultValue>none</defaultValue>
+		<description>The function to activate.</description>
+		<since>0.1.0</since>
+		<info>possible values are : CollectionEnvMerge (Merge a collection and an environment variables file)</info>
+	</param>
+	
+	<param>
+		<id>`collection-path`</id>
+		<required>`true`</required>
+		<defaultValue>none</defaultValue>
+		<description>Path of postman collection to merge.</description>
+		<since>0.1.0</since>
+		<info>Required only for fun 'CollectionEnvMerge'.</info>
+	</param>
+
+	<param>
+		<id>`environment-path`</id>
+		<required>`true`</required>
+		<defaultValue>none</defaultValue>
+		<description>Path of postman environment to merge.</description>
+		<since>0.1.0</since>
+		<info>Required only for fun 'CollectionEnvMerge'.</info>
+	</param>
+
+	<param>
+		<id>`output-path`</id>
+		<required>`true`</required>
+		<defaultValue>none</defaultValue>
+		<description>Path of the merged collection.</description>
+		<since>0.1.0</since>
+		<info>Required only for fun 'CollectionEnvMerge'.</info>
+	</param>
+
+</tool-help-config>
